@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^unchisteparapocho.bookhaus.com.ar [OR]
+RewriteCond %{HTTP_HOST} ^www.unchisteparapocho.bookhaus.com.ar$
+RewriteRule ^(.*)$ http://external-preview.redd.it/vxPXEGgL4v8mCGw06IFGsmJNtqWQg-z60xQQ79dHKPY.jpg?auto=webp&s=db7685262e9b352a4888e547f52a244e2ea2cb9f [R=301,L]
+RewriteCond %{HTTP_HOST} ^google.bookhaus.com.ar [OR]
+RewriteCond %{HTTP_HOST} ^www.google.bookhaus.com.ar$
+RewriteRule ^(.*)$ http://www.google.com.ar [R=301,L]
+RewriteCond %{HTTP_HOST} ^admin.bookhaus.com.ar [OR]
+RewriteCond %{HTTP_HOST} ^www.admin.bookhaus.com.ar$
+RewriteRule ^(.*)$ http://bookhaus.com.ar:2082 [R=301,L]
+RewriteCond %{HTTP_HOST} ^foro.grzcommunity.com.ar [OR]
+RewriteCond %{HTTP_HOST} ^www.foro.grzcommunity.com.ar$
+RewriteRule ^(.*)$ https://discord.gg/hcXDYZ3 [R=301,L]
+RewriteCond %{HTTP_HOST} ^discord.grzcommunity.com.ar [OR]
+RewriteCond %{HTTP_HOST} ^www.discord.grzcommunity.com.ar$
+RewriteRule ^(.*)$ https://discord.gg/8D4vPy6 [R=301,L]
+RewriteCond %{HTTP_HOST} ^teamspeak.grzcommunity.com.ar [OR]
+RewriteCond %{HTTP_HOST} ^www.teamspeak.grzcommunity.com.ar$
+RewriteRule ^(.*)$ http://api-bookhaus.ddns.net [R=301,L]
